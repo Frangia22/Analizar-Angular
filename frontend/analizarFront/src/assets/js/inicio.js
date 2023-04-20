@@ -10,12 +10,12 @@ function restaurarTitulo() {
 
 function cambiarImagen() {
     const imagen1 = document.getElementById('imagen-principal')
-    imagen1.src = "../static/img/analizarSinBg.png"
+    imagen1.src = "../assets/img/analizarSinBg.png"
 }
 
 function restaurarImagen() {
     const imagen2 = document.getElementById('imagen-principal')
-    imagen2.src = "../static/img/fondo1b.png"
+    imagen2.src = "../assets/img/fondo1b.png"
 }
 
 function cambiarImagenServicios() {
