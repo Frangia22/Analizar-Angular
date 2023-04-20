@@ -104,5 +104,7 @@ Para ello ir al **app.module.ts**, importar los distintos componentes de la pagi
 - component: define el componente que le dice al enrutador que componente corresponde al seleccionar dicha ruta.
 ```
 
-5. Por ultimo para indicarle por ejemplo al nav a que ruta virtual tiene que ir, debo ingresar al nav y en item servicios por ejemplo agregar la etiqueta **routerLink="rutaVirtualDefinida"**
+5. Importar en los otros modulos el modulo routing, es decir en el pages ir y importarlo
+
+6. Por ultimo para indicarle por ejemplo al nav a que ruta virtual tiene que ir, debo ingresar al nav y en item servicios por ejemplo agregar la etiqueta **routerLink="rutaVirtualDefinida"**
 ![](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2837%29.png)
