@@ -1,0 +1,55 @@
+<section class="seccion__contacto">
+    <div class="cabecera">
+      <h2 class="titulos-h2" id="contacto"><strong>CONTACTO</strong></h2>
+    </div>
+    <form action="#" class="formulario" id="formulario">                  
+      <!-- Grupo: Nombre -->
+      <div class="formulario__grupo" id="grupo__nombre">
+        <label class="formulario__label">Nombre y Apellido</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">Disculpe, debe ingresar nombre y apellido válidos.</p>
+      </div>
+
+      <!-- Grupo: Correo Electrónico -->
+      <div class="formulario__grupo" id="grupo__correo">
+        <label class="formulario__label">Correo Electrónico</label>
+        <div class="formulario__grupo-input">
+          <input type="email" class="formulario__input" name="correo" id="correo" placeholder="nombre@gmail.com">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">Recuerde, el correo puede contener letras, números, punto, debe tener el símbolo @ y el proveedor del servicio.</p>
+      </div>
+
+      <!-- Grupo: Mensaje -->
+      <div class="formulario__grupo" id="grupo__mensaje">
+        <label class="formulario__label">Mensaje</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="Exprese aquí el motivo de su contacto, si requiere de algún servicio específico o cualquier información que considere relevante. Gracias.">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>              
+        </div>
+        <p class="formulario__input-error">Por favor, déjenos un mensaje con el motivo de su solicitud de contacto.</p>
+      </div>
+
+      <!-- Grupo: Términos y Condiciones -->
+      <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+        <label class="formulario__label">
+          <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+          <b class="formulario__span">Acepto los terminos y condiciones</b>
+        </label>
+      </div>
+
+      <!-- Mensaje de campos requeridos -->
+      <div class="formulario__mensaje" id="formulario__mensaje">
+      <p><i class="fas fa-exclamation-circle"><b>Error:</b> Por favor, complete correctamente los campos del formulario.</i></p>
+      </div>
+
+      <!-- Grupo: Enviar -->
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado satisfactoriamente. En breve nos comunicaremos con Ud.</p>
+        <button type="submit" class="formulario__btn">Enviar</button>            
+      </div>
+    </form>
+  </section>

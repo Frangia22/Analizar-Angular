@@ -1,0 +1,226 @@
+/* --- 5to Bloque - Formulario de Contacto de AnalizAr --- */
+.seccion__contacto{
+    display: flex;
+    padding: 0rem 0rem 2rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+}
+
+.formulario__grupo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario__label {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    opacity: 0.5;    
+    background: #FFFFFF;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    line-height: 45px;
+    padding: 0 10px;
+    transition: 1s all ease;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 45px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__input:focus {
+    box-shadow: 5px 5px 5px #1d971b;
+    opacity: 1;
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__span {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.formulario__checkbox {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+}
+
+.formulario__grupo-terminos {
+    text-align: center;
+}
+
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
+    grid-column: 1fr;
+}
+
+.formulario__mensaje {
+    display: none;    
+    padding: 15px;
+    border-radius: 5px;
+    background: #dd2a2a;
+    text-align: center;    
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    padding: 15px 75px;
+    background: #4D8E4C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+.formulario__btn:hover {
+    font-size: 18px;
+    box-shadow: #3b3b38 10px 5px 10px;
+}
+
+.formulario__mensaje-exito {
+    font-size: 2em;
+    color: #4D8E4C;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+/* --------------- Validación Formulario de contacto --------------- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color:#1d971b;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color:#dd2a2a
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color:#dd2a2a;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #dd2a2a;
+}
+/* --- Bloque Final - Media Queries de AnalizAr --- */
+@media screen and (max-width:1200px) {
+    .contenedor-superior {
+        grid-column: span1;
+    }
+} 
+
+@media screen and (max-width:1024px) {
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr;
+    } 
+} 
+
+@media screen and (max-width:768px) {
+    .contenedor-superior {
+        flex-direction: column;
+    }   
+    .contenedor-superior-item1,
+    .contenedor-superior-item2 {
+        flex-basis: content;
+    } 
+    .contenedor-servicios{
+        grid-template-columns: 90%;
+        justify-content: center;
+    } 
+
+    .contenedor-servicios .contenedor-imagen {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .contenedor-servicios .contenedor-tabla .titulos-h3 {
+        text-align: center;
+    }
+
+    .contenedor-comentarios{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contenedor-tarjetas {
+        width: 80%;
+        align-items: center;
+    }
+    
+    .formulario {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .contenedor-superior {
+        flex-direction: column;
+    }   
+    .contenedor-superior-item2 img {
+        width: 250px;
+        height: 250px;
+    } 
+
+    .contenedor-tabla{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "header"
+            "main1"
+            "main2"
+            "main3"
+            "footer1" 
+            "footer2"
+            "footer3";
+        align-content: center;
+        gap: 16px;
+    }
+}
