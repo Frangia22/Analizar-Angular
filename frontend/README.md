@@ -30,3 +30,31 @@
 2. **ng g c layout/header**
 3. **ng g c layout/footer**
 
+# Exportar componentes creados
+
+1. Ingreso al archivo **module.ts** del modulo creado
+2. Agrego la linea
+``` 
+  exports: [
+    //Coloco los componentes que quiero exportar
+    HeaderComponent,
+    NavComponent,
+    FooterComponent
+  ]
+```
+**Recordar haber importado el componente al principio del documento, si tiene la extesión en el visual cuando en el exports tipeen el nombre del componente automaticamente lo importara**
+
+# Importar componente en el app.module.ts o en otro modulo
+
+1. Ingreso al **app.module.ts**
+2. Busco la linea imports y agrego el nombre del modulo a importar
+``` 
+  imports: [
+    //Colocar el modulo a importar
+    BrowserModule,
+    LayoutModule,
+    PagesModule,
+    AppRoutingModule
+  ],
+```
+**Recordar haber importado el modulo al principio del documento**
