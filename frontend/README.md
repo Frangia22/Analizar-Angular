@@ -1,4 +1,17 @@
 # Desplegar Angular en su ordenador
+1. Clonar el repo
+``` 
+git clone https://github.com/Frangia22/Analizar-Angular.git
+```
+2. Ingresar a la carpeta del proyecto, seria en la que esta el *src*, *angular.json*, *package.json* se ubican ahí para ejecutarlo. En mi caso, hice cd frontend/analizarFront/
+```
+npm install
+```
+3. Una vez instaladas las dependecias les va a aparecer la carpeta node_modules, solo resta que ejecuten la app Angular y listo es todo.
+```
+ng serve -o
+```
+
 
 
 
@@ -7,6 +20,7 @@
 1. **npm install bootstrap bootsrap-icons** --> Dentro de la carpeta donde creaste la app, es decir donde esta ubicada la carpeta node_modules, src y archivos package.json, angular.json entre otros
 
 2. Ingreso al archivo **angular.json** , busco la linea *styles* y *scripts* y agrego lo siguiente:
+          ```
           -  "styles": [
               ***"node_modules/bootstrap/dist/css/bootstrap.css",***
               ***"node_modules/bootstrap-icons/font/bootstrap-icons.css",***
@@ -15,6 +29,7 @@
           -  "scripts": [
               ***"node_modules/bootstrap/dist/js/bootstrap.min.js"***
             ]
+            ```
 3. Ejecutar **ng serve -o** y listo se integro bootstrap
 
 
@@ -97,7 +112,8 @@
 4. Configurar las rutas de la aplicación
 
 Para ello ir al **app.module.ts**, importar los distintos componentes de la pagina y luego definir la rutas virtuales en el array **routes**
-![Routes](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2833%29.png)
+
+![Rutas](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2833%29.png)
 
 ```
 - path: define la ruta virtual de nuestra aplicación.
@@ -107,4 +123,5 @@ Para ello ir al **app.module.ts**, importar los distintos componentes de la pagi
 5. Importar en los otros modulos el modulo routing, es decir en el pages ir y importarlo
 
 6. Por ultimo para indicarle por ejemplo al nav a que ruta virtual tiene que ir, debo ingresar al nav y en item servicios por ejemplo agregar la etiqueta **routerLink="rutaVirtualDefinida"**
-![](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2837%29.png)
+
+![Rut](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2837%29.png)
