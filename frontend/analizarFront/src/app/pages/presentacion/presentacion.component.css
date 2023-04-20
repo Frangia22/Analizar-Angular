@@ -1,0 +1,47 @@
+/* --- Bloque General - Títulos y Textos de AnalizAr --- */
+.titulos-h1{
+    font-family: Roboto;
+    font-size: 31.5px;
+    color: #4D8E4C;
+    text-align: left;
+}
+
+.titulos-h2{
+    font-family: Roboto;
+    font-size: 27px;
+    color: #4D8E4C;
+    text-align: center;
+    padding: 50px;
+}
+
+.titulos-h3{
+    font-family: Roboto;
+    font-size: 18px;
+    color: #171715;
+    text-align: left;
+}
+/* --- 1er Bloque - Presentación de AnalizAr --- */
+.contenedor-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 4rem;
+    height: 81vh;
+}
+
+.contenedor-superior-item1{
+    flex: 1 1 400px;
+}
+
+.contenedor-superior-item2{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 400px;
+}
+
+.contenedor-superior-item2 img {
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
