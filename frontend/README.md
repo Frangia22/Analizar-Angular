@@ -58,3 +58,51 @@
   ],
 ```
 **Recordar haber importado el modulo al principio del documento**
+
+# Crear modulo de rutas
+
+*Si no lo instale cuando inicie el proyecto debo realizar apartir del paso 1 sino comenzar desde el 4*
+1. Ejecutar el comando: **ng g m app-routing.module.ts**
+2. Editar el módulo creado anteriormente para que quede de la siguiente manera:
+
+``` 
+    import { NgModule } from '@angular/core';
+    import { RouterModule, Routes } from '@angular/router';
+
+    const routes: Routes = [
+      //Acá van las distintas rutas
+      /*path: define la ruta virtual de nuestra aplicación.
+        component: define el componente que le dice al enrutador que componente corresponde al seleccionar dicha ruta.
+      */
+    ];
+
+    @NgModule({
+      imports: [RouterModule.forRoot(routes)],
+      exports: [RouterModule]
+    })
+    export class AppRoutingModule { }
+``` 
+3. En el archivo **app.module.ts** importar el modulo de rutas creado
+```
+  import { AppRoutingModule } from './app-routing.module';
+// Esta va dentro del @NgModule
+  imports: [
+    BrowserModule,
+    LayoutModule,
+    PagesModule,
+    AppRoutingModule
+  ],
+```
+
+4. Configurar las rutas de la aplicación
+
+Para ello ir al **app.module.ts**, importar los distintos componentes de la pagina y luego definir la rutas virtuales en el array **routes**
+![Routes](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2833%29.png)
+
+```
+- path: define la ruta virtual de nuestra aplicación.
+- component: define el componente que le dice al enrutador que componente corresponde al seleccionar dicha ruta.
+```
+
+5. Por ultimo para indicarle por ejemplo al nav a que ruta virtual tiene que ir, debo ingresar al nav y en item servicios por ejemplo agregar la etiqueta **routerLink="rutaVirtualDefinida"**
+![](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2837%29.png)
