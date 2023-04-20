@@ -113,7 +113,8 @@ ng serve -o
 
 Para ello ir al **app.module.ts**, importar los distintos componentes de la pagina y luego definir la rutas virtuales en el array **routes**
 
-![Rutas](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2833%29.png)
+![imagen](https://user-images.githubusercontent.com/56803807/233462164-e86d324d-af86-423c-be6e-b588aef33f5e.png)
+
 
 ```
 - path: define la ruta virtual de nuestra aplicación.
@@ -124,4 +125,4 @@ Para ello ir al **app.module.ts**, importar los distintos componentes de la pagi
 
 6. Por ultimo para indicarle por ejemplo al nav a que ruta virtual tiene que ir, debo ingresar al nav y en item servicios por ejemplo agregar la etiqueta **routerLink="rutaVirtualDefinida"**
 
-![Rut](https://acceso.ispc.edu.ar/pluginfile.php/96386/mod_book/chapter/6082/image%20%2837%29.png)
+![imagen](https://user-images.githubusercontent.com/56803807/233462334-4140931f-f990-409e-98fb-b238602253e3.png)
