@@ -6,10 +6,13 @@
 2. Ingreso al archivo **angular.json** , busco la linea *styles* y *scripts* y agrego lo siguiente:
             "styles": [
               ***"node_modules/bootstrap/dist/css/bootstrap.css",***
+              ***"node_modules/bootstrap-icons/font/bootstrap-icons.css",***
               "src/styles.css"
             ],
             "scripts": [
-              ***"node_modules/jquery/dist/jquery.slim.min.js",***
-              ***"node_modules/popper.js/dist/umd/popper.min.js",***
               ***"node_modules/bootstrap/dist/js/bootstrap.min.js"***
             ]
+3. Ejecutar *ng serve -o* y listo se integro bootstrap
+
+* Si ven que no lo toma, ingresar al archivo styles.css y agregar la siguiente linea: ***@import "~bootstrap/dist/css/bootstrap.css";*** *
+**De igual manera hay otras formas de integrarlo esta es la más facil**
