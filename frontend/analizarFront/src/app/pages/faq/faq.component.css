@@ -1,0 +1,107 @@
+/* --- 4to Bloque - Preguntas Frecuentes de AnalizAr --- */
+.seccion__faq{
+    display: flex;
+    padding: 0rem 0rem 2rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+}
+
+details{
+    width: 80%;
+    background: #FFFFFF;
+    padding: .5rem;
+    border-radius: 6px;
+    /* margin: 30px; */
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+summary{
+    list-style: none;
+    font-weight: 600;
+}
+
+summary::before{
+    content: '+';
+    padding-right: 1rem;
+}
+
+details[open] summary::before{
+    content: '-';
+}
+/* --- Bloque Final - Media Queries de AnalizAr --- */
+@media screen and (max-width:1200px) {
+    .contenedor-superior {
+        grid-column: span1;
+    }
+} 
+
+@media screen and (max-width:1024px) {
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr;
+    } 
+} 
+
+@media screen and (max-width:768px) {
+    .contenedor-superior {
+        flex-direction: column;
+    }   
+    .contenedor-superior-item1,
+    .contenedor-superior-item2 {
+        flex-basis: content;
+    } 
+    .contenedor-servicios{
+        grid-template-columns: 90%;
+        justify-content: center;
+    } 
+
+    .contenedor-servicios .contenedor-imagen {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .contenedor-servicios .contenedor-tabla .titulos-h3 {
+        text-align: center;
+    }
+
+    .contenedor-comentarios{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contenedor-tarjetas {
+        width: 80%;
+        align-items: center;
+    }
+    
+    .formulario {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .contenedor-superior {
+        flex-direction: column;
+    }   
+    .contenedor-superior-item2 img {
+        width: 250px;
+        height: 250px;
+    } 
+
+    .contenedor-tabla{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "header"
+            "main1"
+            "main2"
+            "main3"
+            "footer1" 
+            "footer2"
+            "footer3";
+        align-content: center;
+        gap: 16px;
+    }
+}
