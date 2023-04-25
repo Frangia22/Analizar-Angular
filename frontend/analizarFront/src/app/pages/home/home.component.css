@@ -200,12 +200,14 @@ summary{
 }
 
 summary::before{
-    content: '+';
+    content: '\1F892';
+    font-size: 2em;
     padding-right: 1rem;
 }
 
 details[open] summary::before{
-    content: '-';
+    content: '\1F893';
+    font-size: 2em;
 }
 /* --- 5to Bloque - Formulario de Contacto de AnalizAr --- */
 .seccion__contacto{
