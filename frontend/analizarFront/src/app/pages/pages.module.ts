@@ -6,6 +6,7 @@ import { Pagina404Component } from './pagina404/pagina404.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -14,7 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PresentacionComponent,
     Pagina404Component,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PresentacionComponent,
     Pagina404Component, 
     HomeComponent, 
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ]
 })
 export class PagesModule { }
