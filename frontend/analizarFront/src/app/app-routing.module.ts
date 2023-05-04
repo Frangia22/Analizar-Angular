@@ -20,7 +20,7 @@ const routes: Routes = [
   {path: 'home', component:HomeComponent},
   {path: '', redirectTo:'/home', pathMatch:'full'},
   {path: 'login', component:LoginComponent},
-  {path: 'dashboard', component: DashboardComponent},
+  {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
   {path: 'alertas', component: AlertasComponent, canActivate: [AuthGuard]},
   {path: '**', component:Pagina404Component},
 ];
