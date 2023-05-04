@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AlertasComponent } from './pages/alertas/alertas.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FaqComponent } from './pages/faq/faq.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: '', redirectTo:'/home', pathMatch:'full'},
   {path: 'login', component:LoginComponent},
   {path: 'dashboard', component: DashboardComponent},
+  {path: 'alertas', component: AlertasComponent},
   {path: '**', component:Pagina404Component},
 ];
 
