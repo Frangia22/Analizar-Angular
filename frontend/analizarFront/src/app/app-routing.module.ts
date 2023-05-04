@@ -9,6 +9,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { Pagina404Component } from './pages/pagina404/pagina404.component';
 import { PresentacionComponent } from './pages/presentacion/presentacion.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { AuthGuard } from './service/authGuard.service';
+
 
 const routes: Routes = [
   //Acá van las distintas rutas
@@ -19,7 +21,7 @@ const routes: Routes = [
   {path: '', redirectTo:'/home', pathMatch:'full'},
   {path: 'login', component:LoginComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'alertas', component: AlertasComponent},
+  {path: 'alertas', component: AlertasComponent, canActivate: [AuthGuard]},
   {path: '**', component:Pagina404Component},
 ];
 
