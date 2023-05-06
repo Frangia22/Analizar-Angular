@@ -8,7 +8,6 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AlertasComponent } from './alertas/alertas.component';
-import { RegistroComponent } from './registro/registro.component';
 
 
 
@@ -19,14 +18,14 @@ import { RegistroComponent } from './registro/registro.component';
     HomeComponent,
     LoginComponent,
     DashboardComponent,
-    AlertasComponent,
-    RegistroComponent
+    AlertasComponent
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NgChartsModule
   ],
   exports: [
     PresentacionComponent,
@@ -34,8 +33,7 @@ import { RegistroComponent } from './registro/registro.component';
     HomeComponent, 
     LoginComponent,
     DashboardComponent, 
-    AlertasComponent,
-    RegistroComponent
+    AlertasComponent
   ]
 })
 export class PagesModule { }
