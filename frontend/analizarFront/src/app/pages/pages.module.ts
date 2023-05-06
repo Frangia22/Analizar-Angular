@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 
@@ -18,7 +19,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     HomeComponent,
     LoginComponent,
     DashboardComponent,
-    AlertasComponent
+    AlertasComponent,
+    RegistroComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     HomeComponent, 
     LoginComponent,
     DashboardComponent, 
-    AlertasComponent
+    AlertasComponent,
+    RegistroComponent
   ]
 })
 export class PagesModule { }
