@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { NgChartsModule } from 'ng2-charts';
+
 
 
 
