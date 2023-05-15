@@ -1,20 +1,19 @@
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable, catchError, tap, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+  apiUrl = 'http://localhost:3000/usuarios';
+
 
   //Iniciar Sesión
-  login(email: string, password: string): boolean {
-    if (email === 'admin@analizar.tk' && password === '123456789') {
-      localStorage.setItem('currentUser', JSON.stringify({ email: email }));
-      return true;
-    } else {
-      return false;
-    }
+  login(email: string, password: string): Observable<any> {
+    return this.http.get(this.apiUrl);
   }
   //Cerrar sesión 
   logout(): void {
