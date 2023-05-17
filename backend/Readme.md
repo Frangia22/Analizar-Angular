@@ -10,3 +10,6 @@ django-admin startproject nombreProyecto
 ## Levantar servidor Django
 
 py manage.py runserver
+
+## Crear una app dentro del proyecto
+py manage.py startapp nombreApp
