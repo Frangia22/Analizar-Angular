@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'users',
     'medidores',
     'alertas',
+    'consumos',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('consumos/', include('alertas.urls')),
     path('alertas/', include('alertas.urls')),
     path('medidores/', include('medidores.urls')),
     path('users/', include('users.urls')),
