@@ -5,4 +5,4 @@ from .models import Consumos
 
 @admin.register(Consumos)
 class ConsumosAdmin(admin.ModelAdmin):
-    list_display = ('idConsumo', 'medidor', 'fechaMedicion', 'consumo')
+    list_display = ('medidor', 'fechaMedicion', 'consumo')
