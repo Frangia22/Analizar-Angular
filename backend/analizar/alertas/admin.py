@@ -5,4 +5,4 @@ from .models import Alertas
 
 @admin.register(Alertas)
 class AlertasAdmin(admin.ModelAdmin):
-    list_display = ('idAlerta', 'medidor', 'valor', 'fechaAlta')
+    list_display = ('medidor', 'valor', 'fechaAlta')
